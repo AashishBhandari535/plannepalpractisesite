@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Hentaigana+Akari&display=swap');
+$lg:#088F33;
+$brand: #0B732B;
+$w:#fff;
+$o:#ED7702;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.btn-primary
+{
+    background:$o;
+    border-radius: 0;
+    color: $w;
+    border: 1px solid $o
+}
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    background: #F1F1F1;
+}
+.top
+{
+    background: $lg;
+    color: $w;
+    line-height: 40px;
+    li
+    {
+        padding: 5px 5px;
+        display:inline;
+        a
+        {
+            i
+            {
+                font-size: 14px;
+                padding: 6px 0;
+                background-color: $w;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                border-radius: 50%;
+                color: $brand;
+            }
+        }
+    }
+}
+.bg-light
+{
+    background:$brand !important;
+    padding: 0;
+}
+.logo
+{
+    position: absolute;
+    top: -45px;
+    border: 2px $o solid;
+    z-index: 9999;
+   
+}
+.navbar-light 
+{
+    .navbar-nav
+    {
+        .nav-link 
+        {
+            color:$w;
+            padding: 20px;
+            &:hover{
+                color: $w;
+                background: $o;
+            }
+        }
+    }
+}
+.carousel-caption
+{
+    // text-align: right;
+    // text-shadow: 1px 1px 1px $brand;
+    // bottom: 30%;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    left: 36%;
+    padding: 50px 0;
+}
+.wlc
+{
+    h2
+    {
+        font-size: 19px;
+        background: $brand;
+        display: inline-block;
+        padding: 7px;
+        color: $w;
+    }
+    li
+    {
+        &::before
+        {
+            content: '→';
+            padding:10px;
+        }        
+    }
+
+}
+.fbox
+{
+    overflow: hidden;
+    img
+    {
+        width: 100%;
+        transition: 0.9s;
+    }
+    &:hover
+    {
+        img
+        {
+            transform: scale(1.2);
+        }
+    }
+    position: relative;
+    p
+    {
+        position:absolute;
+        background:$o;
+        color:$w;
+        padding: 10px;
+        bottom: 20px;
+    }
+}
+.stickyyy
+{
+    position: fixed;
+    top:0;
+    width: 100%;
+    animation: ss 2s linear;
+    z-index: 9999;
+}
+.nav-tabs
+{
+    li
+    {
+        background: $brand;
+        &:hover
+        {
+            background: $o;
+        }
+    }
+    .nav-link
+    {
+        color:$w;
+        padding: 6px 50px;
+        &.active
+        {
+            background: $o;
+        }
+    }
+}
+.clients
+{
+    .carousel
+    {
+        background: url('https://www.plannepal.com/assets/img/testimonials/clients.jpg');
+        color: $w;
+        min-height: 261px;
+        padding: 20px 20px 0;
+        .carousel-indicators
+        {
+            .active
+            {
+                background: $o !important;
+            }
+        }
+        .carousel-indicators [data-bs-target] 
+        {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid $o;
+        }
+        p
+        {
+            text-align: justify;
+            
+        }
+    }
+}
+.accordion-button,.accordion-button:not(.collapsed)
+{
+    color: $w;
+    background: $brand;
+}
+footer
+{
+    background: #333333;
+    color: $w;
+    padding: 46px 0;
+    a
+    {
+        text-decoration: none;
+        color: $w;
+        position: relative;
+        left: 0;
+        transition: all .2s linear;
+        &:hover
+        {
+            color: $o;
+            left: 5px;    
+        }
+    }
+}
+
+.copyright
+{
+    background: $brand;
+    color: $w;
+}
+@keyframes ss {
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+}

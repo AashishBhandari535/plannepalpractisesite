@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Hentaigana+Akari&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-primary {
+  background: #ED7702;
+  border-radius: 0;
+  color: #fff;
+  border: 1px solid #ED7702;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #F1F1F1;
+}
+
+.top {
+  background: #088F33;
+  color: #fff;
+  line-height: 40px;
+}
+
+.top li {
+  padding: 5px 5px;
+  display: inline;
+}
+
+.top li a i {
+  font-size: 14px;
+  padding: 6px 0;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  color: #0B732B;
+}
+
+.bg-light {
+  background: #0B732B !important;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  top: -45px;
+  border: 2px #ED7702 solid;
+  z-index: 9999;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  padding: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  background: #ED7702;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 20%;
+  right: 7%;
+  left: 36%;
+  padding: 50px 0;
+}
+
+.wlc h2 {
+  font-size: 19px;
+  background: #0B732B;
+  display: inline-block;
+  padding: 7px;
+  color: #fff;
+}
+
+.wlc li::before {
+  content: '→';
+  padding: 10px;
+}
+
+.fbox {
+  overflow: hidden;
+  position: relative;
+}
+
+.fbox img {
+  width: 100%;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.fbox:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fbox p {
+  position: absolute;
+  background: #ED7702;
+  color: #fff;
+  padding: 10px;
+  bottom: 20px;
+}
+
+.stickyyy {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-animation: ss 2s linear;
+          animation: ss 2s linear;
+  z-index: 9999;
+}
+
+.nav-tabs li {
+  background: #0B732B;
+}
+
+.nav-tabs li:hover {
+  background: #ED7702;
+}
+
+.nav-tabs .nav-link {
+  color: #fff;
+  padding: 6px 50px;
+}
+
+.nav-tabs .nav-link.active {
+  background: #ED7702;
+}
+
+.clients .carousel {
+  background: url("https://www.plannepal.com/assets/img/testimonials/clients.jpg");
+  color: #fff;
+  min-height: 261px;
+  padding: 20px 20px 0;
+}
+
+.clients .carousel .carousel-indicators .active {
+  background: #ED7702 !important;
+}
+
+.clients .carousel .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ED7702;
+}
+
+.clients .carousel p {
+  text-align: justify;
+}
+
+.accordion-button, .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: #0B732B;
+}
+
+footer {
+  background: #333333;
+  color: #fff;
+  padding: 46px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  left: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+footer a:hover {
+  color: #ED7702;
+  left: 5px;
+}
+
+.copyright {
+  background: #0B732B;
+  color: #fff;
+}
+
+@-webkit-keyframes ss {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes ss {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

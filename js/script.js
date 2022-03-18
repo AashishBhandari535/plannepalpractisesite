@@ -1,0 +1,12 @@
+$(window).scroll(function(){
+    if($(this).scrollTop()>200)
+    {
+        $("header").addClass("stickyyy")
+        $(".logo").css("width","109px")
+    }
+    else
+    {
+        $("header").removeClass("stickyyy")
+        $(".logo").css("width","164px")
+    }
+})
